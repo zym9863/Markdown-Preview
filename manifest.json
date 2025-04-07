@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown预览",
+  "version": "1.0",
+  "description": "一个实时将Markdown转换为HTML的浏览器插件",
+  "icons": {
+    "48": "image_fx.jpg",
+    "128": "image_fx.jpg"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "image_fx.jpg"
+  },
+  "permissions": [],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
