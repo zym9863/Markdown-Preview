@@ -7,11 +7,29 @@
     <script src="marked.min.js"></script>
 </head>
 <body>
+    <div class="header">
+        <div class="header-title">
+            <span class="icon">📝</span>
+            <h1>Markdown Preview</h1>
+        </div>
+        <div class="header-actions">
+            <button class="btn-secondary" id="clear-btn" title="清空内容">🗑️</button>
+            <button class="btn-secondary" id="copy-btn" title="复制HTML">📋</button>
+        </div>
+    </div>
     <div class="container">
         <div class="editor-section">
+            <div class="section-header">
+                <span class="section-title">编辑器</span>
+                <span class="section-indicator"></span>
+            </div>
             <textarea id="markdown-input" placeholder="在此输入Markdown文本..."></textarea>
         </div>
         <div class="preview-section">
+            <div class="section-header">
+                <span class="section-title">预览</span>
+                <span class="section-indicator"></span>
+            </div>
             <div id="html-output"></div>
         </div>
     </div>
